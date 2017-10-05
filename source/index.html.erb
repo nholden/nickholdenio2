@@ -1,38 +1,78 @@
 ---
-title: Welcome to Middleman
+title: Nick Holden
 ---
 
-<h1>Hi!</h1>
+<div class="header">
+  <div class="headshot">
+    <%= image_tag 'headshot.png', width: '150px', height: '150px' %>
+  </div>
+  <div class="contact-icons">
+    <div class="icon">
+      <% link_to('mailto:nick.r.holden@gmail.com', target: '_blank') do %><i class="fa fa-envelope"></i><% end %>
+    </div>
+    <div class="icon">
+      <% link_to('https://github.com/nholden', target: '_blank') do %><i class="fa fa-github"></i><% end %>
+    </div>
+    <div class="icon">
+      <% link_to('https://www.linkedin.com/in/nickholden', target: '_blank') do %><i class="fa fa-linkedin-square"></i><% end %>
+    </div>
+    <div class="icon">
+      <% link_to('https://www.twitter.com/nickyholden', target: '_blank') do %><i class="fa fa-twitter-square"></i><% end %>
+    </div>
+  </div>
+</div>
 
-<p>
-  I&rsquo;m Nick, a software developer based out of San Diego. I&rsquo;ve always had an interest in programming, and since I completed
-  <%= link_to('UC Berkeley&rsquo;s Agile Development Using Ruby on Rails',
-              'https://edx.org/professional-certificate/agile-development-using-ruby-rails',
-              target: '_blank') %>
-  professional certificate program in 2014, I&rsquo;ve been hooked on optimizing for programmer happiness and convention over configuration.
-  Today, I&rsquo;m a developer at <%= link_to('Real HQ', 'https://realhq.com', target: '_blank') %>, and I spend a whole lot of my free
-  time learning about new tech and working on side projects.
-</p>
+<div class="section">
+  <div class="headline">
+    <h1>Hi!</h1>
+  </div>
+  <div class="content">
+    <p>
+      I&rsquo;m Nick, a software developer based out of San Diego. I&rsquo;ve always had an interest in programming, and since I completed
+      <%= link_to('UC Berkeley&rsquo;s Agile Development Using Ruby on Rails',
+                  'https://edx.org/professional-certificate/agile-development-using-ruby-rails',
+                  target: '_blank') %>
+      professional certificate program in 2014, I&rsquo;ve been hooked on optimizing for programmer happiness and convention over configuration.
+      Today, I&rsquo;m a developer at <%= link_to('Real HQ', 'https://realhq.com', target: '_blank') %>, and I spend a whole lot of my free
+      time learning about new tech and working on side projects.
+    </p>
+  </div>
+</div>
 
-<h2>Highlighted project</h2>
+<div class="section">
+  <div class="headline">
+    <h2>Highlighted project</h2>
+  </div>
+  <div class="content">
+    <div class="project">
+      <div class="project-title">DiffAlert</div>
+      <p>
+        <%= link_to('Demo', 'http://diffalert.nickholden.io', target: '_blank') %><br>
+				<%= link_to('Source', 'https://github.com/nholden/diffalert', target: '_blank') %>
+      </p>
+      <p>Get email or Slack alerts when specific files in your GitHub repositories change.</p>
+    </div>
+  </div>
+</div>
 
-<h3>DiffAlert</h3>
+<div class="section">
+  <div class="headline">
+    <h2>Selected open source contributions</h2>
+  </div>
+  <div class="content">
+    <p>
+      [merged] [ruby]
+      <%= link_to('Include "Help make this better" text on track topic pages', 'https://github.com/exercism/exercism.io/pull/3475', target: '_blank') %>
+      exercism/exercism.io
+    </p>
 
-<p>[screenshot]</p>
-<p><%= link_to('Demo', 'http://diffalert.nickholden.io', target: '_blank') %></p>
-<p><%= link_to('Source', 'https://github.com/nholden/diffalert', target: '_blank') %></p>
-<p>Get email or Slack alerts when specific files in your GitHub repositories change. Perhaps this could be a longer description?</p>
+    <p>
+      [merged] [javascript]
+      <%= link_to('Fix issue with hyphens in file validation mime types', 'https://github.com/victorjonsson/jQuery-Form-Validator/pull/650', target: '_blank') %>
+      victorjonsson/jQuery-Form-Validator
+    </p>
+  </div>
+</div>
 
-<h2>Selected open source contributions</h2>
-
-<p>
-  [merged] [javascript]
-  <%= link_to('Fix issue with hyphens in file validation mime types', 'https://github.com/victorjonsson/jQuery-Form-Validator/pull/650', target: '_blank') %>
-  victorjonsson/jQuery-Form-Validator
-</p>
-
-<p>
-  [merged] [ruby]
-  <%= link_to('Include "Help make this better" text on track topic pages', 'https://github.com/exercism/exercism.io/pull/3475', target: '_blank') %>
-  exercism/exercism.io
-</p>
+<div class="footer">
+</div>
