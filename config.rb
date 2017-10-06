@@ -31,11 +31,35 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def ruby_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__ruby') { 'Ruby' }
+  end
+
+  def rails_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__rails') { 'Rails' }
+  end
+
+  def sinatra_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__sinatra') { 'Sinatra' }
+  end
+
+  def minitest_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__minitest') { 'Minitest' }
+  end
+
+  def rspec_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__rspec') { 'RSpec' }
+  end
+
+  def javascript_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__javascript') { 'JavaScript' }
+  end
+
+  def rubygems_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__rubygems') { 'RubyGems' }
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

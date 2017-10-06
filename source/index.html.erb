@@ -41,38 +41,45 @@ title: Nick Holden
 
 <div class="section">
   <div class="headline">
-    <h2>Highlighted project</h2>
+    <h2>Projects</h2>
   </div>
   <div class="content">
     <div class="project">
-      <div class="project-title">DiffAlert</div>
-      <p>
-        <%= link_to('Demo', 'http://diffalert.nickholden.io', target: '_blank') %><br>
-				<%= link_to('Source', 'https://github.com/nholden/diffalert', target: '_blank') %>
-      </p>
-      <p>Get email or Slack alerts when specific files in your GitHub repositories change.</p>
+      <div class="project-title"><%= link_to('DiffAlert', 'https://github.com/nholden/diffalert', target: '_blank') %></div>
+      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %></div>
+      <div class="project-description">Get email or Slack alerts when specific files in your GitHub repositories change.</div>
     </div>
   </div>
 </div>
 
 <div class="section">
   <div class="headline">
-    <h2>Selected open source contributions</h2>
+    <h2>Open source contributions</h2>
   </div>
   <div class="content">
-    <p>
-      [merged] [ruby]
-      <%= link_to('Include "Help make this better" text on track topic pages', 'https://github.com/exercism/exercism.io/pull/3475', target: '_blank') %>
-      exercism/exercism.io
-    </p>
-
-    <p>
-      [merged] [javascript]
-      <%= link_to('Fix issue with hyphens in file validation mime types', 'https://github.com/victorjonsson/jQuery-Form-Validator/pull/650', target: '_blank') %>
-      victorjonsson/jQuery-Form-Validator
-    </p>
+    <div class="contribution">
+      <div class="contribution-title">
+        <%= link_to('[exercism/exercism.io] Include "Help make this better" text on track topic pages', 'https://github.com/exercism/exercism.io/pull/3475', target: '_blank') %>
+      </div>
+      <div class="tech-tags"><%= ruby_tech_tag %><%= sinatra_tech_tag %><%= minitest_tech_tag %></div>
+    </div>
+    <div class="contribution">
+      <div class="contribution-title">
+        <%= link_to('[franklsf95/ruby-emoji-regex] Update script and regex for emoji version 6.0', 'https://github.com/franklsf95/ruby-emoji-regex/pull/2', target: '_blank') %>
+      </div>
+      <div class="tech-tags"><%= ruby_tech_tag %><%= minitest_tech_tag %></div>
+    </div>
+    <div class="contribution">
+      <div class="contribution-title">
+        <%= link_to('[victorjonsson/jQuery-Form-Validator] Fix issue with hyphens in file validation mime types', 'https://github.com/victorjonsson/jQuery-Form-Validator/pull/650', target: '_blank') %>
+      </div>
+      <div class="tech-tags"><%= javascript_tech_tag %></div>
+    </div>
+    <div class="contribution">
+      <div class="contribution-title">
+        <%= link_to('[threedaymonk/htmlentities] Add encoder instruction to restrict encoding to four-byte characters', 'https://github.com/threedaymonk/htmlentities/pull/32/files', target: '_blank') %>
+      </div>
+      <div class="tech-tags"><%= ruby_tech_tag %><%= rubygems_tech_tag %><%= minitest_tech_tag %></div>
+    </div>
   </div>
-</div>
-
-<div class="footer">
 </div>

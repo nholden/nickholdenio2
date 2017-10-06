@@ -5,6 +5,9 @@ body {
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-size: 15px;
+  color: $color--medium-grey;
+  line-height: 1.5em;
 }
 
 a {
@@ -33,7 +36,7 @@ h1, h2, h3 {
 
 .header {
   text-align: center;
-  padding: 1.5em 0;
+  padding: 2em 0;
 
   .headshot {
     padding: 1em 0;
@@ -44,32 +47,79 @@ h1, h2, h3 {
       display: inline-block;
       font-size: 30px;
       padding: 0 0.25em;
-
-      a {
-        color: $color--red;
-
-        &:active, &:focus, &:hover {
-				  color: darken($color--red, 15%);
-        }
-      }
     }
   }
 }
 
 .section {
-  padding: 0.5em 0;
-}
-
-p {
-  color: $color--medium-grey;
-  font-size: 16px;
-  line-height: 1.5em;
+  padding: 1em 0;
 }
 
 .project {
+  margin: 1.5em 0;
+
   .project-title {
-    margin-top: 1.25em;
-		color: $color--dark-grey;
+    margin: 0.5em 0;
 		font-size: 20px;
+  }
+
+  .project-description {
+    margin: 0.5em 0;
+  }
+}
+
+.contribution {
+  margin: 1.5em 0;
+
+  .contribution-title {
+    margin: 0.5em 0;
+  }
+}
+
+.tech-tags {
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.tech-tag {
+  font-size: 12px;
+  color: $color--white;
+  border-radius: 5px;
+  padding: 0.35em;
+  margin-right: 0.25em;
+
+  &__ruby {
+    background-color: $color--ruby;
+    text-shadow: 1px 1px 0 darken($color--ruby, 25%);
+  }
+
+  &__rails {
+    background-color: $color--rails;
+    text-shadow: 1px 1px 0 darken($color--rails, 25%);
+  }
+
+  &__sinatra {
+    background-color: $color--sinatra;
+    text-shadow: 1px 1px 0 darken($color--sinatra, 25%);
+  }
+
+  &__rspec {
+    background-color: $color--rspec;
+    text-shadow: 1px 1px 0 darken($color--rspec, 25%);
+  }
+
+  &__minitest {
+    background-color: $color--minitest;
+    text-shadow: 1px 1px 0 darken($color--minitest, 25%);
+  }
+
+  &__javascript {
+    background-color: $color--javascript;
+    text-shadow: 1px 1px 0 darken($color--javascript, 25%);
+  }
+
+  &__rubygems {
+    background-color: $color--rubygems;
+    text-shadow: 1px 1px 0 darken($color--rubygems, 25%);
   }
 }
