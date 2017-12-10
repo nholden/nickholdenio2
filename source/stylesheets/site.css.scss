@@ -41,7 +41,7 @@ h1, h2, h3 {
   .headshot {
     padding: 1em 0;
   }
-  
+
   .contact-icons {
     .icon {
       display: inline-block;
@@ -56,7 +56,7 @@ h1, h2, h3 {
 }
 
 .project {
-  margin: 1.5em 0;
+  margin: 1.75em 0;
 
   .project-title {
     margin: 0.5em 0;
@@ -69,7 +69,7 @@ h1, h2, h3 {
 }
 
 .contribution {
-  margin: 1.5em 0;
+  margin: 1.75em 0;
 
   .contribution-title {
     margin: 0.5em 0;
@@ -116,6 +116,11 @@ h1, h2, h3 {
   &__javascript {
     background-color: $color--javascript;
     text-shadow: 1px 1px 0 darken($color--javascript, 25%);
+  }
+
+  &__vue-js {
+    background-color: $color--vue-js;
+    text-shadow: 1px 1px 0 darken($color--vue-js, 25%);
   }
 
   &__rubygems {
