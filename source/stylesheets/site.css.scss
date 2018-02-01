@@ -68,6 +68,22 @@ h1, h2, h3 {
   }
 }
 
+.blog-post {
+  margin: 1.75em 0;
+
+  .blog-post-title {
+    margin: 0.5em 0;
+  }
+
+  .blockquote {
+    margin-left: 2em;
+    padding-left: 1em;
+    border-left: 3px solid $color--light-red;
+    color: $color--light-grey;
+    font-style: italic;
+  }
+}
+
 .contribution {
   margin: 1.75em 0;
 
