@@ -63,6 +63,10 @@ helpers do
   def rubygems_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__rubygems') { 'RubyGems' }
   end
+
+  def documentation_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__documentation') { 'Documentation' }
+  end
 end
 
 # Build-specific configuration

@@ -143,4 +143,9 @@ h1, h2, h3 {
     background-color: $color--rubygems;
     text-shadow: 1px 1px 0 darken($color--rubygems, 25%);
   }
+
+  &__documentation {
+    background-color: $color--documentation;
+    text-shadow: 1px 1px 0 darken($color--documentation, 25%);
+  }
 }
