@@ -1,5 +1,9 @@
 @import 'globals';
 
+html {
+  background-color: $color--red;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -9,6 +13,9 @@ body {
   color: $color--medium-grey;
   line-height: 1.5em;
   letter-spacing: 0.01em;
+  margin: 0;
+  border-top: $color--red 10px solid;
+  background-color: $color--white;
 }
 
 a {
@@ -29,7 +36,6 @@ h1, h2, h3 {
 
 .body-container {
   background-color: #ffffff;
-  border-radius: 1em;
   margin: 0 auto;
   padding: 2em;
   max-width: 700px;
