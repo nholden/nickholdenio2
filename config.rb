@@ -67,6 +67,10 @@ helpers do
   def documentation_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__documentation') { 'Documentation' }
   end
+
+  def graphql_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__graphql') { 'GraphQL' }
+  end
 end
 
 # Build-specific configuration

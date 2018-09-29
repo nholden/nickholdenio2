@@ -166,4 +166,9 @@ h1, h2, h3 {
     background-color: $color--documentation;
     text-shadow: 1px 1px 0 darken($color--documentation, 25%);
   }
+
+  &__graphql {
+    background-color: $color--graphql;
+    text-shadow: 1px 1px 0 darken($color--documentation, 25%);
+  }
 }
