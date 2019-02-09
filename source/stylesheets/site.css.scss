@@ -152,6 +152,11 @@ h1, h2, h3 {
     text-shadow: 1px 1px 0 darken($color--javascript, 25%);
   }
 
+  &__jest {
+    background-color: $color--jest;
+    text-shadow: 1px 1px 0 darken($color--jest, 25%);
+  }
+
   &__vue-js {
     background-color: $color--vue-js;
     text-shadow: 1px 1px 0 darken($color--vue-js, 25%);
@@ -170,5 +175,15 @@ h1, h2, h3 {
   &__graphql {
     background-color: $color--graphql;
     text-shadow: 1px 1px 0 darken($color--documentation, 25%);
+  }
+
+  &__docker {
+    background-color: $color--docker;
+    text-shadow: 1px 1px 0 darken($color--docker, 25%);
+  }
+
+  &__github-actions {
+    background-color: $color--github-actions;
+    text-shadow: 1px 1px 0 darken($color--github-actions, 25%);
   }
 }

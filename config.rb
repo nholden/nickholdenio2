@@ -56,6 +56,10 @@ helpers do
     content_tag(:span, class: 'tech-tag tech-tag__javascript') { 'JavaScript' }
   end
 
+  def jest_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__jest') { 'Jest' }
+  end
+
   def vue_js_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__vue-js') { 'Vue.js' }
   end
@@ -70,6 +74,14 @@ helpers do
 
   def graphql_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__graphql') { 'GraphQL' }
+  end
+
+  def docker_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__docker') { 'Docker' }
+  end
+
+  def github_actions_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__github-actions') { 'GitHub Actions' }
   end
 end
 
