@@ -162,6 +162,11 @@ h1, h2, h3 {
     text-shadow: 1px 1px 0 darken($color--vue-js, 25%);
   }
 
+  &__react {
+    background-color: $color--react;
+    text-shadow: 1px 1px 0 darken($color--react, 33%);
+  }
+
   &__rubygems {
     background-color: $color--rubygems;
     text-shadow: 1px 1px 0 darken($color--rubygems, 25%);

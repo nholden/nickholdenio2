@@ -64,6 +64,10 @@ helpers do
     content_tag(:span, class: 'tech-tag tech-tag__vue-js') { 'Vue.js' }
   end
 
+  def react_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__react') { 'React' }
+  end
+
   def rubygems_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__rubygems') { 'RubyGems' }
   end
