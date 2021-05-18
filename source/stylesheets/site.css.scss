@@ -152,9 +152,19 @@ h1, h2, h3 {
     text-shadow: 1px 1px 0 darken($color--javascript, 25%);
   }
 
+  &__typescript {
+    background-color: $color--typescript;
+    text-shadow: 1px 1px 0 darken($color--typescript, 25%);
+  }
+
   &__jest {
     background-color: $color--jest;
     text-shadow: 1px 1px 0 darken($color--jest, 25%);
+  }
+
+  &__mocha {
+    background-color: $color--mocha;
+    text-shadow: 1px 1px 0 darken($color--mocha, 25%);
   }
 
   &__vue-js {
@@ -190,5 +200,10 @@ h1, h2, h3 {
   &__github-actions {
     background-color: $color--github-actions;
     text-shadow: 1px 1px 0 darken($color--github-actions, 25%);
+  }
+
+  &__web-components {
+    background-color: $color--web-components;
+    text-shadow: 1px 1px 0 darken($color--web-components, 25%);
   }
 }

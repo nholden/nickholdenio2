@@ -56,8 +56,16 @@ helpers do
     content_tag(:span, class: 'tech-tag tech-tag__javascript') { 'JavaScript' }
   end
 
+  def typescript_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__typescript') { 'TypeScript' }
+  end
+
   def jest_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__jest') { 'Jest' }
+  end
+
+  def mocha_tech_tag
+    content_tag(:span, class: 'tech-tag tech-tag__mocha') { 'Mocha' }
   end
 
   def vue_js_tech_tag
@@ -86,6 +94,10 @@ helpers do
 
   def github_actions_tech_tag
     content_tag(:span, class: 'tech-tag tech-tag__github-actions') { 'GitHub Actions' }
+  end
+
+  def web_components_tech_tag 
+    content_tag(:span, class: 'tech-tag tech-tag__web-components') { 'Web Components' }
   end
 end
 
