@@ -33,8 +33,14 @@ title: Nick Holden
       configuration and optimizing for programmer happiness ever since.
     </p>
     <p>
-      Today, I’m an engineer at
-      <%= link_to('Campsite', 'https://campsite.design', target: '_blank') %>.
+      <% if campsite_contribution_links %>
+        Today, I’m an engineer at
+        <%= link_to('Campsite', 'https://campsite.design', target: '_blank') %>,
+        where I recently worked on <%= campsite_contribution_links %>.
+      <% else %>
+        Today, I’m an engineer at
+        <%= link_to('Campsite', 'https://campsite.design', target: '_blank') %>.
+      <% end %>
       I previously built software at 
       <%= link_to('GitHub', 'https://github.com', target: '_blank') %>,
       <%= link_to('Stripe', 'https://stripe.com', target: '_blank') %>, and
