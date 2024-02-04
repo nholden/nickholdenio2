@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rss=$(curl -s https://www.campsite.design/changelog/rss)
+rss=$(curl -s https://www.campsite.co/changelog/rss)
 urls=( $(xmllint --xpath "//item/link/text()" - <<<"$rss") )
 result_json="[]"
 
