@@ -1,5 +1,3 @@
-require "active_support/core_ext/array/conversions"
-
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -100,16 +98,6 @@ helpers do
 
   def web_components_tech_tag 
     content_tag(:span, class: 'tech-tag tech-tag__web-components') { 'Web Components' }
-  end
-
-  def campsite_contribution_links
-    return unless data.try(:campsite_contributions).try(:any?)
-
-    links = data.campsite_contributions.first(3).map do |contribution|
-      link_to(contribution.title, contribution.url, target: '_blank')
-    end
-    
-    links.to_sentence
   end
 end
 
