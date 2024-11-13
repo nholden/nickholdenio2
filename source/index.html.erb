@@ -28,9 +28,8 @@ title: Nick Holden
   </div>
   <div class="content">
     <p>
-      I’m Nick, a software developer based out of San Diego. In 2014, I wrote
-      my first line of Rails, and I’ve been hooked on convention over
-      configuration and optimizing for programmer happiness ever since.
+      I’m Nick, a product engineer based out of San Diego. I’m energized by shipping, getting feedback, and iterating.
+      I mostly write and review code in Ruby and TypeScript, but I’m excited to learn anything to build great products.
     </p>
     <p>
       Today, I’m an engineer at
@@ -45,38 +44,7 @@ title: Nick Holden
 
 <div class="section">
   <div class="headline">
-    <h2>Projects</h2>
-  </div>
-  <div class="content">
-    <div class="project">
-      <div class="project-title">
-        <%= link_to('Crawl Vote', 'https://github.com/nholden/crawl_vote', target: '_blank') %>
-        <% link_to('https://dev.to/devteam/announcing-the-pusher-contest-winners-1dlo', title: 'Panel Grand Prize winner of the DEV Pusher Contest', target: '_blank') do %><i class="fa fa-trophy"></i><% end %>
-      </div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %><%= vue_js_tech_tag %><%= graphql_tech_tag %></div>
-      <div class="project-description">Helps groups on the move choose a next spot</div>
-    </div>
-    <div class="project">
-      <div class="project-title"><%= link_to('<code>&lt;typing-effect&gt;</code> Element', 'https://github.com/github/typing-effect-element', target: '_blank') %></div>
-      <div class="tech-tags"><%= typescript_tech_tag %><%= mocha_tech_tag %><%= web_components_tech_tag %></div>
-      <div class="project-description">A custom element that shows text as if it were being typed</div>
-    </div>
-    <div class="project">
-      <div class="project-title"><%= link_to('Monday Miles', 'https://github.com/nholden/monday-miles', target: '_blank') %></div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %><%= vue_js_tech_tag %></div>
-      <div class="project-description">Analyzes Strava data to help athletes celebrate Monday finishes</div>
-    </div>
-    <div class="project">
-      <div class="project-title"><%= link_to('FIT Negative Split', 'https://github.com/nholden/fit-negative-split', target: '_blank') %></div>
-      <div class="tech-tags"><%= javascript_tech_tag %><%= jest_tech_tag %></div>
-      <div class="project-description">Did the activity in your Garmin FIT file have a negative split?</div>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="headline">
-    <h2>Blog posts</h2>
+    <h2>Writing</h2>
   </div>
   <div class="content">
     <div class="blog-post">
@@ -86,16 +54,6 @@ title: Nick Holden
       <div class="blockquote">
         <p>
           With the new version of the refactor deployed, we continued to see snappy interactions in Campsite. We had a great new foundation for transforming rich text, and we had a renewed appreciation for profiling and flamegraphs.
-        </p>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('Class methods are Ruby’s useEffect', 'https://www.campsite.com/blog/class-methods-are-rubys-useeffect', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          Escape hatches like useEffect and class methods exist for a reason — sometimes they’re the only option. But when you come across class methods in code you write or review, consider alternatives.
         </p>
       </div>
     </div>
@@ -116,24 +74,6 @@ title: Nick Holden
       <div class="blockquote">
         <p>
           Even with all the magic that Rails provides, most apps need a whole bunch of things — like authentication, UI, background jobs, email sending, deployment — that aren’t unique to my idea. Next time I have an idea, I’ll look for ways to write less code and maintain less infrastructure, at least to get started.
-        </p>
-      </div>
-      <div class="blog-post-title">
-        <%= link_to('Resist the ‘quick fix’', 'https://dev.to/nholden/resist-the-quick-fix--4fpl', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          To-dos move the context of a problem about out of my brain and into a centralized place where others can consider it for their own work. A thoughtful explanation of a problem in prose is more discoverable than a commit message, a comment, or “self-documenting” code. It can also bring more perspectives into the conversation by making the problem accessible to those who otherwise wouldn’t be reviewing a code solution.
-        </p>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('Continuously deploy custom Heroku error and maintenance pages from your app’s repository', 'https://dev.to/nholden/continuously-deploy-custom-heroku-error-and-maintenance-pages-from-your-apps-repository-13kn', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          Heroku recommends hosting custom error and maintenance pages on Amazon S3, but it can be easy to upload pages there, forget about them, and have them fall out of sync with the rest of your application. One solution is to have them continuously deployed from your application&rsquo;s repository.
         </p>
       </div>
     </div>
@@ -157,6 +97,12 @@ title: Nick Holden
   <div class="content">
     <div class="contribution">
       <div class="contribution-title">
+        <%= link_to('[calcom/cal.com] feat: Campsite conferencing app', 'https://github.com/calcom/cal.com/pull/15713', target: '_blank') %>
+      </div>
+      <div class="tech-tags"><%= typescript_tech_tag %></div>
+    </div>
+    <div class="contribution">
+      <div class="contribution-title">
         <%= link_to('[rails/rails] Add <code>active_record.destroy_association_async_batch_size</code> configuration', 'https://github.com/rails/rails/pull/44617', target: '_blank') %>
       </div>
       <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
@@ -169,21 +115,9 @@ title: Nick Holden
     </div>
     <div class="contribution">
       <div class="contribution-title">
-        <%= link_to('[netlify/netlify-cms] Add <code>pickerUtc</code> option to datetime widget', 'https://github.com/netlify/netlify-cms/pull/3721', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= javascript_tech_tag %><%= react_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
         <%= link_to('[texas-justice-initiative/website-nextjs] Add autocomplete filter', 'https://github.com/texas-justice-initiative/website-nextjs/pull/65', target: '_blank') %>
       </div>
       <div class="tech-tags"><%= javascript_tech_tag %><%= react_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[thepracticaldev/dev.to] Improve developer experience for previewing docs in development', 'https://github.com/thepracticaldev/dev.to/pull/843', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= documentation_tech_tag %><%= javascript_tech_tag %></div>
     </div>
     <div class="contribution">
       <div class="contribution-title">
@@ -191,17 +125,31 @@ title: Nick Holden
       </div>
       <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
     </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[vuejs-tips/v-money] Add <code>allowBlank</code> option', 'https://github.com/vuejs-tips/v-money/pull/51', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= javascript_tech_tag %><%= vue_js_tech_tag %></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="headline">
+    <h2>Projects</h2>
+  </div>
+  <div class="content">
+    <div class="project">
+      <div class="project-title"><%= link_to('<code>&lt;typing-effect&gt;</code> Element', 'https://github.com/github/typing-effect-element', target: '_blank') %></div>
+      <div class="tech-tags"><%= typescript_tech_tag %><%= mocha_tech_tag %><%= web_components_tech_tag %></div>
+      <div class="project-description">A custom element that shows text as if it were being typed</div>
     </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[victorjonsson/jQuery-Form-Validator] Fix issue with hyphens in file validation mime types', 'https://github.com/victorjonsson/jQuery-Form-Validator/pull/650', target: '_blank') %>
+    <div class="project">
+      <div class="project-title"><%= link_to('FIT Negative Split', 'https://github.com/nholden/fit-negative-split', target: '_blank') %></div>
+      <div class="tech-tags"><%= javascript_tech_tag %><%= jest_tech_tag %></div>
+      <div class="project-description">Did the activity in your Garmin FIT file have a negative split?</div>
+    </div>
+    <div class="project">
+      <div class="project-title">
+        <%= link_to('Crawl Vote', 'https://github.com/nholden/crawl_vote', target: '_blank') %>
+        <% link_to('https://dev.to/devteam/announcing-the-pusher-contest-winners-1dlo', title: 'Panel Grand Prize winner of the DEV Pusher Contest', target: '_blank') do %><i class="fa fa-trophy"></i><% end %>
       </div>
-      <div class="tech-tags"><%= javascript_tech_tag %></div>
+      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %><%= vue_js_tech_tag %><%= graphql_tech_tag %></div>
+      <div class="project-description">Helps groups on the move choose a next spot</div>
     </div>
   </div>
 </div>
