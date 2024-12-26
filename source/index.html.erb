@@ -22,133 +22,109 @@ title: Nick Holden
   </div>
 </div>
 
-<div class="section">
-  <div class="headline">
-    <h1>Hi!</h1>
+<h1>Hi!</h1>
+<p>
+  I’m Nick, a product engineer based out of San Diego. I’m energized by shipping, getting feedback, and iterating.
+  I mostly write and review code in Ruby and TypeScript, but I’m excited to learn anything to build great products.
+</p>
+<p>
+  I previously built software at 
+  <%= link_to('Campsite', 'https://campsite.com', target: '_blank') %>,
+  <%= link_to('GitHub', 'https://github.com', target: '_blank') %>,
+  <%= link_to('Stripe', 'https://stripe.com', target: '_blank') %>, and
+  <%= link_to('Tuple', 'https://tuple.app', target: '_blank') %>.
+</p>
+
+<h2>Writing</h2>
+<div class="blog-post">
+  <div class="blog-post-title">
+    <%= link_to('How we made a Ruby method 200x faster', '/how-we-made-a-ruby-method-200x-faster') %>
   </div>
-  <div class="content">
+  <div class="blockquote">
     <p>
-      I’m Nick, a product engineer based out of San Diego. I’m energized by shipping, getting feedback, and iterating.
-      I mostly write and review code in Ruby and TypeScript, but I’m excited to learn anything to build great products.
+      With the new version of the refactor deployed, we continued to see snappy interactions in Campsite. We had a great new foundation for transforming rich text, and we had a renewed appreciation for profiling and flamegraphs.
     </p>
+  </div>
+</div>
+<div class="blog-post">
+  <div class="blog-post-title">
+    <%= link_to('Stop paying the code-review productivity tax', 'https://app.campsite.co/campsite/p/notes/4zvq5fmqazmh', target: '_blank') %>
+  </div>
+  <div class="blockquote">
     <p>
-      I previously built software at 
-      <%= link_to('Campsite', 'https://campsite.com', target: '_blank') %>,
-      <%= link_to('GitHub', 'https://github.com', target: '_blank') %>,
-      <%= link_to('Stripe', 'https://stripe.com', target: '_blank') %>, and
-      <%= link_to('Tuple', 'https://tuple.app', target: '_blank') %>.
+      Open PRs for tiny vertical slices. Let’s say you’re adding “widgets” to your application. A PR that’s all of the backend controller actions needed to support all CRUD operations on widgets is hard to review. Instead, start with a PR that introduces a blank page and a new URL behind a feature flag. Later, open another PR that displays some widgets on that page.
+    </p>
+  </div>
+</div>
+<div class="blog-post">
+  <div class="blog-post-title">
+    <%= link_to('How I replaced a Rails app with a few dozen lines of Ruby', 'https://dev.to/nholden/how-i-replaced-a-rails-app-with-a-few-dozen-lines-of-ruby-3l1m', target: '_blank') %>
+  </div>
+  <div class="blockquote">
+    <p>
+      Even with all the magic that Rails provides, most apps need a whole bunch of things — like authentication, UI, background jobs, email sending, deployment — that aren’t unique to my idea. Next time I have an idea, I’ll look for ways to write less code and maintain less infrastructure, at least to get started.
+    </p>
+  </div>
+</div>
+<div class="blog-post">
+  <div class="blog-post-title">
+    <%= link_to('Try ending today with a failing test for a great start tomorrow', 'https://dev.to/nholden/try-ending-today-with-a-failing-test-for-a-great-start-tomorrow-3i8j', target: '_blank') %>
+  </div>
+  <div class="blockquote">
+    <p>
+      Starting with a failing test means I know exactly what to work on: making it pass. Compared to an item on a to-do list, a failing test is better at returning my mind to the state it was in when I was focused deeply on the task.
     </p>
   </div>
 </div>
 
-<div class="section">
-  <div class="headline">
-    <h2>Writing</h2>
+<h2>Open source contributions</h2>
+<div class="contribution">
+  <div class="contribution-title">
+    <%= link_to('[calcom/cal.com] feat: Campsite conferencing app', 'https://github.com/calcom/cal.com/pull/15713', target: '_blank') %>
   </div>
-  <div class="content">
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('How we made a Ruby method 200x faster', 'https://www.campsite.com/blog/how-we-made-a-ruby-method-200x-faster', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          With the new version of the refactor deployed, we continued to see snappy interactions in Campsite. We had a great new foundation for transforming rich text, and we had a renewed appreciation for profiling and flamegraphs.
-        </p>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('Stop paying the code-review productivity tax', 'https://app.campsite.co/campsite/p/notes/4zvq5fmqazmh', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          Open PRs for tiny vertical slices. Let’s say you’re adding “widgets” to your application. A PR that’s all of the backend controller actions needed to support all CRUD operations on widgets is hard to review. Instead, start with a PR that introduces a blank page and a new URL behind a feature flag. Later, open another PR that displays some widgets on that page.
-        </p>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('How I replaced a Rails app with a few dozen lines of Ruby', 'https://dev.to/nholden/how-i-replaced-a-rails-app-with-a-few-dozen-lines-of-ruby-3l1m', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          Even with all the magic that Rails provides, most apps need a whole bunch of things — like authentication, UI, background jobs, email sending, deployment — that aren’t unique to my idea. Next time I have an idea, I’ll look for ways to write less code and maintain less infrastructure, at least to get started.
-        </p>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="blog-post-title">
-        <%= link_to('Try ending today with a failing test for a great start tomorrow', 'https://dev.to/nholden/try-ending-today-with-a-failing-test-for-a-great-start-tomorrow-3i8j', target: '_blank') %>
-      </div>
-      <div class="blockquote">
-        <p>
-          Starting with a failing test means I know exactly what to work on: making it pass. Compared to an item on a to-do list, a failing test is better at returning my mind to the state it was in when I was focused deeply on the task.
-        </p>
-      </div>
-    </div>
+  <div class="tech-tags"><%= typescript_tech_tag %></div>
+</div>
+<div class="contribution">
+  <div class="contribution-title">
+    <%= link_to('[rails/rails] Add <code>active_record.destroy_association_async_batch_size</code> configuration', 'https://github.com/rails/rails/pull/44617', target: '_blank') %>
   </div>
+  <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
+</div>
+<div class="contribution">
+  <div class="contribution-title">
+    <%= link_to('[apokalipto/devise_saml_authenticatable] Validate <code>InResponseTo</code> header in SAML responses', 'https://github.com/apokalipto/devise_saml_authenticatable/pull/195', target: '_blank') %>
+  </div>
+  <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %></div>
+</div>
+<div class="contribution">
+  <div class="contribution-title">
+    <%= link_to('[texas-justice-initiative/website-nextjs] Add autocomplete filter', 'https://github.com/texas-justice-initiative/website-nextjs/pull/65', target: '_blank') %>
+  </div>
+  <div class="tech-tags"><%= javascript_tech_tag %><%= react_tech_tag %></div>
+</div>
+<div class="contribution">
+  <div class="contribution-title">
+    <%= link_to('[rails/rails] Add <code>before?</code> and <code>after?</code> methods to date and time classes', 'https://github.com/rails/rails/pull/32185', target: '_blank') %>
+  </div>
+  <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
 </div>
 
-<div class="section">
-  <div class="headline">
-    <h2>Open source contributions</h2>
-  </div>
-  <div class="content">
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[calcom/cal.com] feat: Campsite conferencing app', 'https://github.com/calcom/cal.com/pull/15713', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= typescript_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[rails/rails] Add <code>active_record.destroy_association_async_batch_size</code> configuration', 'https://github.com/rails/rails/pull/44617', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[apokalipto/devise_saml_authenticatable] Validate <code>InResponseTo</code> header in SAML responses', 'https://github.com/apokalipto/devise_saml_authenticatable/pull/195', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[texas-justice-initiative/website-nextjs] Add autocomplete filter', 'https://github.com/texas-justice-initiative/website-nextjs/pull/65', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= javascript_tech_tag %><%= react_tech_tag %></div>
-    </div>
-    <div class="contribution">
-      <div class="contribution-title">
-        <%= link_to('[rails/rails] Add <code>before?</code> and <code>after?</code> methods to date and time classes', 'https://github.com/rails/rails/pull/32185', target: '_blank') %>
-      </div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= minitest_tech_tag %></div>
-    </div>
-  </div>
+<h2>Projects</h2>
+<div class="project">
+  <div class="project-title"><%= link_to('<code>&lt;typing-effect&gt;</code> Element', 'https://github.com/github/typing-effect-element', target: '_blank') %></div>
+  <div class="tech-tags"><%= typescript_tech_tag %><%= mocha_tech_tag %><%= web_components_tech_tag %></div>
+  <div class="project-description">A custom element that shows text as if it were being typed</div>
 </div>
-
-<div class="section">
-  <div class="headline">
-    <h2>Projects</h2>
+<div class="project">
+  <div class="project-title"><%= link_to('FIT Negative Split', 'https://github.com/nholden/fit-negative-split', target: '_blank') %></div>
+  <div class="tech-tags"><%= javascript_tech_tag %><%= jest_tech_tag %></div>
+  <div class="project-description">Did the activity in your Garmin FIT file have a negative split?</div>
+</div>
+<div class="project">
+  <div class="project-title">
+    <%= link_to('Crawl Vote', 'https://github.com/nholden/crawl_vote', target: '_blank') %>
+    <% link_to('https://dev.to/devteam/announcing-the-pusher-contest-winners-1dlo', title: 'Panel Grand Prize winner of the DEV Pusher Contest', target: '_blank') do %><i class="fa fa-trophy"></i><% end %>
   </div>
-  <div class="content">
-    <div class="project">
-      <div class="project-title"><%= link_to('<code>&lt;typing-effect&gt;</code> Element', 'https://github.com/github/typing-effect-element', target: '_blank') %></div>
-      <div class="tech-tags"><%= typescript_tech_tag %><%= mocha_tech_tag %><%= web_components_tech_tag %></div>
-      <div class="project-description">A custom element that shows text as if it were being typed</div>
-    </div>
-    <div class="project">
-      <div class="project-title"><%= link_to('FIT Negative Split', 'https://github.com/nholden/fit-negative-split', target: '_blank') %></div>
-      <div class="tech-tags"><%= javascript_tech_tag %><%= jest_tech_tag %></div>
-      <div class="project-description">Did the activity in your Garmin FIT file have a negative split?</div>
-    </div>
-    <div class="project">
-      <div class="project-title">
-        <%= link_to('Crawl Vote', 'https://github.com/nholden/crawl_vote', target: '_blank') %>
-        <% link_to('https://dev.to/devteam/announcing-the-pusher-contest-winners-1dlo', title: 'Panel Grand Prize winner of the DEV Pusher Contest', target: '_blank') do %><i class="fa fa-trophy"></i><% end %>
-      </div>
-      <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %><%= vue_js_tech_tag %><%= graphql_tech_tag %></div>
-      <div class="project-description">Helps groups on the move choose a next spot</div>
-    </div>
-  </div>
+  <div class="tech-tags"><%= ruby_tech_tag %><%= rails_tech_tag %><%= rspec_tech_tag %><%= javascript_tech_tag %><%= vue_js_tech_tag %><%= graphql_tech_tag %></div>
+  <div class="project-description">Helps groups on the move choose a next spot</div>
 </div>

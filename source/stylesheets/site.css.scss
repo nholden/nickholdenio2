@@ -21,6 +21,7 @@ body {
   border-top: 10px solid;
   border-color: $color--red;
   background-color: $color--white;
+  overflow-x: hidden;
 
   @media (prefers-color-scheme: dark) {
     color: $dark-color--mint;
@@ -54,11 +55,15 @@ h2,
 h3 {
   font-weight: normal;
   color: $color--dark-grey;
-  margin: 0;
+  margin: 2em 0 0 0;
 
   @media (prefers-color-scheme: dark) {
     color: lighten($dark-color--mint, 15%);
   }
+}
+
+li {
+  margin-top: 0.5em;
 }
 
 .body-container {
@@ -82,10 +87,6 @@ h3 {
       padding: 0 0.25em;
     }
   }
-}
-
-.section {
-  padding: 1em 0;
 }
 
 .project {
@@ -244,4 +245,13 @@ h3 {
     background-color: $color--web-components;
     text-shadow: 1px 1px 0 darken($color--web-components, 25%);
   }
+}
+
+pre.highlight {
+  overflow-x: scroll;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
 }

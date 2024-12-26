@@ -1,0 +1,9 @@
+<% wrap_layout :layout do %>
+  <div class="header">
+    <h1><%= current_article.title %></h1>
+    <p>
+      <%= link_to('Nick Holden', '/') %>
+    </p>
+  </div>
+  <%= yield %>
+<% end %>

@@ -112,3 +112,10 @@ end
 # Live reload
 # https://middlemanapp.com/basics/development-cycle/#livereload
 activate :livereload
+
+activate :blog do |blog|
+  blog.permalink = "{title}"
+  blog.layout = "blog_layout"
+end
+
+activate :syntax
