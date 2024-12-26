@@ -114,7 +114,7 @@ end
 activate :livereload
 
 activate :blog do |blog|
-  blog.permalink = "{title}"
+  blog.permalink = "{title}.html"
   blog.layout = "blog_layout"
 end
 
