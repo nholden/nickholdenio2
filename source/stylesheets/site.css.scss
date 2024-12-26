@@ -15,7 +15,7 @@ body {
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 15px;
   color: $color--medium-grey;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   margin: 0;
   border-top: 10px solid;
@@ -56,6 +56,7 @@ h3 {
   font-weight: normal;
   color: $color--dark-grey;
   margin: 2em 0 0 0;
+  line-height: 1.2;
 
   @media (prefers-color-scheme: dark) {
     color: lighten($dark-color--mint, 15%);
