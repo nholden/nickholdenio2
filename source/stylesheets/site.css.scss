@@ -22,6 +22,7 @@ body {
   border-color: $color--red;
   background-color: $color--white;
   overflow-x: hidden;
+  min-height: calc(100vh - 10px);
 
   @media (prefers-color-scheme: dark) {
     color: $dark-color--mint;
