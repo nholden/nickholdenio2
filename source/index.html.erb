@@ -4,7 +4,7 @@ title: Nick Holden
 
 <div class="header">
   <div class="headshot">
-    <%= image_tag 'headshot.png', width: 200, height: 200 %>
+    <%= image_tag 'headshot.png', width: 200, height: 'auto' %>
   </div>
   <div class="contact-icons">
     <div class="icon">
@@ -28,6 +28,8 @@ title: Nick Holden
   I mostly write and review code in Ruby and TypeScript, but I’m excited to learn anything to build great products.
 </p>
 <p>
+  Today, I’m an engineer at
+  <%= link_to('WorkOS', 'https://workos.com', target: '_blank') %>.
   I previously built software at 
   <%= link_to('Campsite', 'https://campsite.com', target: '_blank') %>,
   <%= link_to('GitHub', 'https://github.com', target: '_blank') %>,
