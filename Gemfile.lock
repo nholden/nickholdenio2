@@ -91,6 +91,7 @@ GEM
       middleman-core (>= 3.2)
       rouge (~> 3.2)
     minitest (5.19.0)
+    mutex_m (0.3.0)
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.1)
@@ -131,9 +132,10 @@ DEPENDENCIES
   middleman-blog
   middleman-livereload
   middleman-syntax
+  mutex_m
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.4.2p28
 
 BUNDLED WITH
    2.3.9
