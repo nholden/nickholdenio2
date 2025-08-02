@@ -1,0 +1,31 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+jobs:
+  workos_contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update workos_contributions.json
+        run: |
+          rm -f ./data/workos_contributions.json
+          
+          http_code=$(curl -s -w "%{http_code}" -o ./data/workos_contributions.json https://nholden--c8e57b8a6fb711f083930224a6c84d84.web.val.run/changelogs)
+          
+          if [[ "$http_code" =~ ^2 ]]; then
+            echo "Successfully fetched changelogs"
+            
+            if git diff --quiet; then
+              echo "No new contributions"
+            else
+              git config user.name github-actions
+              git config user.email github-actions@github.com
+              git add .
+              git commit -m "Update WorkOS contributions"
+              git push
+            fi
+          else
+            echo "Failed to fetch changelogs - HTTP request unsuccessful"
+            exit 1
+          fi
